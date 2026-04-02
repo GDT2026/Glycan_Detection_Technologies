@@ -1,115 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Glycan Detection Technologies</title>
-<style>
-  body { margin: 0; font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; scroll-behavior: smooth; }
-  a { color: #1E90FF; text-decoration: none; transition: 0.3s; }
-  a:hover { text-decoration: underline; }
-
-  .hero { background: url('images/hero-slide.png') no-repeat center/cover; color: white; text-align: center; padding: 150px 20px; position: relative; overflow: hidden; }
-  .hero h1 { font-size: 2.8rem; margin-bottom: 20px; animation: fadeInUp 1s ease forwards; opacity: 0; }
-  .hero p { font-size: 1.2rem; margin-bottom: 30px; animation: fadeInUp 1.2s ease forwards; opacity: 0; }
-  .button { background-color: #2C3E50; color: white; padding: 12px 28px; border-radius: 5px; display: inline-block; transition: 0.3s; }
-  .button:hover { background-color: #1A2A3A; transform: translateY(-2px); }
-
-  section { padding: 80px 20px; max-width: 1000px; margin: auto; }
-  h2 { text-align: center; margin-bottom: 50px; color: #2C3E50; }
-
-  .tech-cards, .apps-cards { display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; }
-  .card { background: #f7f7f7; padding: 25px; flex: 1 1 250px; border-radius: 10px; text-align: center; transition: transform 0.3s, box-shadow 0.3s; opacity: 0; animation: fadeInUp 1s ease forwards; }
-  .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-
-  .team { display: flex; flex-wrap: wrap; gap: 50px; justify-content: center; text-align: center; }
-  .team-member { max-width: 250px; opacity: 0; animation: fadeInUp 1s ease forwards; }
-  .team-member img { width: 100%; border-radius: 50%; margin-bottom: 15px; }
-
-  .contact p { text-align: center; margin: 10px 0; }
-  footer { background: #2C3E50; color: white; text-align: center; padding: 20px; }
-
-  @keyframes fadeInUp {
-    0% { opacity: 0; transform: translateY(20px); }
-    100% { opacity: 1; transform: translateY(0); }
-  }
-
-  @media(max-width: 600px) {
-    .tech-cards, .apps-cards, .team { flex-direction: column; align-items: center; }
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glycan Detection Technologies</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- Hero Section -->
-<section class="hero">
-  <h1>Tools that unlock the hidden world of glycans</h1>
-  <p>We develop low-cost, easy-to-use tools that enable precise, scalable, and multiplexed analysis of glycans. By charting this underexplored landscape, researchers can uncover biomarkers and therapeutic targets previously hidden from view.</p>
-  <a href="#contact" class="button">Learn More</a>
-</section>
+<header>
+  <nav>
+    <a href="#technology">Technology</a>
+    <a href="#applications">Applications</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <h1>Glycan Detection Technologies</h1>
+  <p>Enabling scientific discovery in glycobiology to unlock biomarkers and therapeutic opportunities for better health and medicine.</p>
+  <a class="button" href="#contact">Learn More</a>
+</header>
 
-<!-- Technology Section -->
 <section id="technology">
   <h2>Our Technology</h2>
-  <div class="tech-cards">
-    <div class="card" style="animation-delay: 0.2s;">
-      <img src="images/tool1.png" alt="Tool Image" style="width:100%; border-radius:10px;">
-      <h3>Low-Cost & Easy-to-Use</h3>
-      <p>Accessible tools designed for research labs of all sizes without sacrificing precision.</p>
-    </div>
-    <div class="card" style="animation-delay: 0.4s;">
-      <img src="images/tool2.png" alt="Tool Image" style="width:100%; border-radius:10px;">
-      <h3>Scalable & Multiplexed</h3>
-      <p>Enables simultaneous analysis of multiple glycan targets for faster discoveries.</p>
-    </div>
-  </div>
+  <p>We develop low-cost, easy-to-use tools that enable precise, scalable, and multiplexed analysis of glycans. By charting this underexplored landscape, researchers can uncover biomarkers and therapeutic targets previously hidden from view.</p>
 </section>
 
-<!-- Applications Section -->
 <section id="applications">
-  <h2>Impact on Health & Pharmaceuticals</h2>
-  <div class="apps-cards">
-    <div class="card" style="animation-delay: 0.2s;">
-      <h3>Biomarker Discovery</h3>
-      <p>Reveal glycan biomarkers critical for early disease detection and monitoring.</p>
-    </div>
-    <div class="card" style="animation-delay: 0.4s;">
-      <h3>Therapeutic Targeting</h3>
-      <p>Identify glycans as new drug targets to improve treatment outcomes.</p>
-    </div>
-    <div class="card" style="animation-delay: 0.6s;">
-      <h3>Disease Profiling</h3>
-      <p>Analyze glycosylation patterns to better understand disease progression.</p>
-    </div>
-  </div>
+  <h2>Applications & Impact</h2>
+  <ul>
+    <li>Biomarker discovery for early disease detection</li>
+    <li>Disease profiling in cancer, immune disorders, and infectious diseases</li>
+    <li>Identification of new therapeutic targets to accelerate drug development</li>
+    <li>Enhanced understanding of glycosylation changes that drive disease processes</li>
+  </ul>
 </section>
 
-<!-- Team Section -->
 <section id="team">
-  <h2>Meet the Team</h2>
-  <div class="team">
-    <div class="team-member" style="animation-delay: 0.2s;">
-      <img src="images/lisa.png" alt="Lia Gaertner">
-      <h3>Lia Gaertner</h3>
-      <p>Co-Founder & CEO</p>
-    </div>
-    <div class="team-member" style="animation-delay: 0.4s;">
-      <img src="images/cofounder.png" alt="Co-Founder">
-      <h3>August Estabrook, PhD</h3>
-      <p>Co-Founder & COO </p>
-    </div>
+  <h2>Our Team</h2>
+  <div class="team-member">
+    <h3>August Estabrook, PhD</h3>
+    <p>Co-founder & CSO – Leading technology development and scientific strategy.</p>
+  </div>
+  <div class="team-member">
+    <h3>Lia Gaertner, MS, MTM</h3>
+    <p>Co-founder & CEO – Bridging scientific innovation with business strategy and commercialization.</p>
   </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p>Email: <a href="mailto:info@glycandetection.com">info@glycandetection.com</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/company/glycandetection" target="_blank">Glycan Detection Technologies</a></p>
-</section>
+
 
 <footer>
-  &copy; 2026 Glycan Detection Technologies. All Rights Reserved.
+  &copy; 2026 Glycan Detection Technologies
 </footer>
 
 </body>
